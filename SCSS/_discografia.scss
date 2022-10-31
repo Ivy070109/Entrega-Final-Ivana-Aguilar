@@ -1,87 +1,111 @@
-main { 
-    h1 {
-      @include titulos;
-    }
-    .container__disc {
+main {
+  flex: 1;
+  .discografia__titulo {
       display: flex;
-      justify-content: center;
-      margin-bottom: 50px;
-      .carousel {
-        width: 500px;
-        height: 500px;
-        margin-top: 20px;
-        box-shadow: 0 0 30px 0 $sombra;
-        margin-bottom: 20px;
-        @media (max-width: $smartphone) {
-          width: 330px;
-          height: 330px;
-        }
-        @media (max-width: $tablets) {
-          width: 450px;
-          height: 450px;
-        }
-        .carousel-caption {
-          color: $violeta;
-          font-family: $parrafos;
-          a {
-            text-decoration: none;
-            color: $sombra;
-            font-size: 1.5rem;
-            font-weight: bold;
-            &:hover {
-              color: $dorado;
-            }
-          }
-        }
+      flex-direction: column;
+      padding: 20px;
+      h1 {
+          @include titulos;
       }
-    }
   }
+}
   
-  section { 
-    display: flex;
-    justify-content: center;
-    margin-bottom: 35px;
-    .accordion {
-      width: 90%; 
+.container__discografia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  place-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  .carousel {
+      place-items: center;
+      width: 60%;
+      height: auto;
+      box-shadow: 0 0 30px 0 $sombra;
+      border: double 7px $dorado; 
+      @media (max-width: $smartphone) {
+          width: 90%;
+      }
+      .carousel-indicators {
+          button {
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+          }
+      }
+      .carousel-inner {
+          img {
+              filter: grayscale(5);
+              &:hover {
+                  filter: none;
+              }
+          }
+      }
+      .carousel-caption {
+          button {
+          @include botones_principales;
+          filter: none;
+          }
+      }
+  }
+}
+
+.container__acordion {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  place-items: center;
+  flex-direction: column;
+  .accordion {
+      width: 90%;
+      margin-bottom: 20px;
+      place-items: center;        
       @media (max-width: $tablets) {
-        width: 85%;
+          width: 85%;
+      }
+      @media (max-width: $smartphone) {
+          width: 90%;
       }
       .accordion-item {
-        color: $sombra;
-        font-size: 1.2rem;
-        line-height: 2;
-        border: 1px solid $sombra;
-        box-shadow: 0 0 30px 0 $sombra;
-        background: linear-gradient(45deg, $violeta, $rosa);
-        button {
-          font-weight: bold;
-          font-family: $titulos;
-          color: $dorado;
-          font-size: 1.5rem;
-          background-color: $colorHeader;
-          border: $violeta;
-        }
+          color: $sombra;
+          font-size: 1.2rem;
+          line-height: 2;
+          border: 1px solid $sombra;
+          box-shadow: 0 0 30px 0 $sombra;
+          background: linear-gradient(45deg, $violeta, $rosa);
+          button {
+              font-weight: bold;
+              font-family: $titulos;
+              color: $dorado;
+              font-size: 1.5rem;
+              background-color: $colorHeader;
+              border: $violeta;
+          }
       }
       .accordion-collapse {
-        justify-content: center;
-        p {
-          @include parrafos;
-        }
-        iframe {
-          margin: 0 320px;
           justify-content: center;
-          width: 50%;
-          height: 300px;
-          @media (max-width: $tablets) {
-            width: 70%;
-            margin: 0 60px;
+          p {
+              @include parrafos;
+              text-align: justify;
           }
-          @media (max-width: $smartphone) {
-            width: 90%;
-            height: 200px;
-            margin: 0 15px;
+          iframe {
+              margin: 0 320px;
+              justify-content: center;
+              width: 50%;
+              height: 300px;
+              @media (max-width: $tablets) {
+                  width: 60%;
+                  margin: 0 60px;
+              }
+              @media (max-width: $smartphone) {
+                  width: 90%;
+                  height: 200px;
+                  margin: 0 15px;
+                  &:hover {
+                      filter: grayscale(0);
+                  }
+              }
           }
-        }
       }
-    }   
   }
+}

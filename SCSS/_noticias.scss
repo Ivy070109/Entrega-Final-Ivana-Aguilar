@@ -1,19 +1,21 @@
 main {
-    margin-top: 20px;
+    flex: 1;
     .section__titulo {
         h1 {
-        @include titulos;
-    }
+            @include titulos;
+            padding: 10px;
+        }
     }
     .section__intro {
+        display: flex;
+        width: 100%;
+        place-items: center;
+        margin: 0;
+        padding: 0;
         #flores {
             width: 800px;
             height: auto;
             border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
             box-shadow: 0 20px 20px 0 $sombra;
             @media (max-width: $tablets) {
                 width: 600px;
@@ -29,27 +31,28 @@ main {
     .section__concierto {
         p {
             @include parrafos_noticias;
-           @media (max-width: $tablets) {
-            margin-top: 0;
-           }
-       }
+            @media (max-width: $tablets) {
+                margin-top: 0;
+            }
+        }
     }
     aside {
+        display: flex;
+        justify-content: center;
         iframe {
             margin-top: 0;
             box-shadow: 0 40px 40px 0 $sombra;
             width: 560px;
             height: 315px;
             @media (max-width: $smartphone) {
-            width: 350px;
-            height: auto;
+                width: 350px;
+                height: auto;
             }
         }
     }
     .section__festival {
         p {
             @include parrafos_noticias;
-       }
+        }
     }
 }
-

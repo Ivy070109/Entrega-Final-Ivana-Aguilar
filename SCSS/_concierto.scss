@@ -1,0 +1,90 @@
+main {
+    flex: 1;
+    .titulares {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        place-items: center;
+        width: 100%;
+        h1 {
+            @include titulos;
+            @media (max-width: $tablets) {
+                font-size: 1.8rem;
+                margin: 0; 
+            }
+        }
+        h3 {
+            @include h3;
+            font-weight: bolder;
+        }
+        .promo {
+            margin: 30px;
+            box-shadow: 0 0 30px 0 $sombra;   
+            border: double 10px $dorado;    
+            border-radius: 20px; 
+            width: 80%;
+        }
+        p {
+            @include parrafos;
+            padding: 0 20px;
+            @media (max-width: $tablets) {
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}
+
+.tour__fechas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    place-items: center;
+    width: 100%;
+    .titulito {
+        @include h3;
+        font-weight: bolder;
+    }
+    .table {
+        padding: 20px;
+        text-align: center;
+        width: 70%;
+        margin-bottom: 20px;
+        @media (max-width: $smartphone) {
+            width: 50%;
+        }
+        thead {
+            color: $sombra;
+           tr {
+            font-family: $parrafos;
+            color: $sombra;
+            font-size: 1.3rem;
+            @media (max-width: $smartphone) {
+                font-size: 1rem;
+            }
+            .primer-btn {
+                @include botones_conciertos;
+                @media (max-width: $smartphone) {
+                    font-size: 1rem;
+                }
+                }
+           }
+        }
+        tbody {
+            line-height: 2;
+            color: $sombra;
+            font-size: 1.3rem;
+            font-family: $parrafos;
+            @media (max-width: $smartphone) {
+                font-size: 1rem;
+            }
+            button {
+                @include botones_conciertos;
+                @media (max-width: $smartphone) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+

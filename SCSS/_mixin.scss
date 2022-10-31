@@ -3,10 +3,6 @@
     margin: 0 auto;
     &:hover {
         transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        -moz-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        -o-transform: scale(1.5);
         color: $dorado;
     }
 }
@@ -19,7 +15,6 @@
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    text-align: center;
 }
 
 @mixin parrafos {
@@ -39,4 +34,57 @@
     line-height: 1.5;
     padding: 20px;
     margin-bottom: 0;
+}
+
+@mixin h3 {
+    font-family: $parrafos;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@mixin botones_principales {
+    font-size: 2rem;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 0 $rosa;
+    }
+    a {
+        text-decoration: none;
+        color: $dorado;
+        font-family: $titulos;
+        font-weight: bold;
+    }
+}
+
+@mixin botones_1 {
+    font-size: 2rem;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 0 $sombra;
+    }
+    a {
+        text-decoration: none;
+        color: $violeta;
+        font-family: $titulos;
+        font-weight: bold;
+        &:hover {
+            color: $dorado;
+        }
+    }
+}
+
+@mixin botones_conciertos {
+    font-size: 1.5rem;
+    background-color: $sombra;
+    &:hover {
+        background-color: $violeta;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 0 $sombra;
+    }
+    a {
+        text-decoration: none;
+        color: $dorado;
+        font-family: $titulos;
+        font-weight: bold;
+    }
 }

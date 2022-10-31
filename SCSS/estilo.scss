@@ -5,7 +5,7 @@ $dorado: #daa520;
 $titulos: 'DancingScript';
 $parrafos: 'Charm-Regular';
 $auxiliar: #ffffff;
-$size_titulos: 2.5rem;
+$size_titulos: 2.8rem;
 $size_p: 1.3rem;
 $sombra: #000000;
 $smartphone: 420px;
@@ -28,14 +28,19 @@ $tablets: 768px;
 }
 
 body {
-    background: $rosa;
+    background-color: $rosa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 @import "header";
 
-@import "main_index";
-
 @import "footer";
+
+@import "mainindex";
+
+@import "contactos";
 
 @import "discografia";
 
@@ -43,6 +48,4 @@ body {
 
 @import "noticias";
 
-@import "contactos";
-
-@import "mixin";
+@import "concierto";
