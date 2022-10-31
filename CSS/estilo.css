@@ -1,0 +1,525 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Charm-Regular';
+  src: url(../Fuentes/Charm-Regular.ttf); }
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url(../Fuentes/DancingScript.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #e48cce; }
+
+header {
+  text-align: center;
+  box-shadow: 0 0 15px 0 #000000; }
+  header .flo_machine {
+    color: #daa520;
+    font-family: "DancingScript";
+    font-size: 1.5rem;
+    font-weight: bold; }
+  header img {
+    width: 35px;
+    height: 40px; }
+  header ul {
+    color: #daa520; }
+    header ul li {
+      color: #daa520;
+      font-size: 1.2rem;
+      font-family: "DancingScript"; }
+      header ul li .nav-link {
+        color: #daa520; }
+        header ul li .nav-link:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          background-color: #711161;
+          color: #daa520;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px; }
+      header ul li #home {
+        color: #daa520; }
+        header ul li #home:hover {
+          color: #daa520; }
+      header ul li .dropdown-menu {
+        color: #daa520;
+        font-size: 1rem; }
+        header ul li .dropdown-menu .dropdown-item {
+          color: #daa520;
+          font-size: 1rem; }
+          header ul li .dropdown-menu .dropdown-item:hover {
+            background-color: #711161;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px; }
+  header .d-flex {
+    font-family: "DancingScript";
+    font-size: 1.2rem;
+    font-weight: bold; }
+    header .d-flex .form-control {
+      background-color: #daa520;
+      border: solid #daa520 1px; }
+    header .d-flex .btn {
+      font-weight: bold;
+      color: #daa520;
+      border: solid #daa520 1px; }
+      header .d-flex .btn:hover {
+        background-color: #711161;
+        color: #daa520;
+        border: solid #201b1b 1px;
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3); }
+  header .navbar-toggler {
+    border: solid 3px goldenrod; }
+    header .navbar-toggler:hover {
+      transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3); }
+
+main {
+  margin-top: 20px; }
+  main section {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5; }
+    main section h1 {
+      color: #711161;
+      font-family: "DancingScript";
+      padding: 10px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      text-align: center; }
+      @media (max-width: 420px) {
+        main section h1 {
+          font-size: 2rem;
+          margin-top: 5px;
+          margin-bottom: 0; } }
+      @media (max-width: 768px) {
+        main section h1 {
+          font-size: 2.5rem;
+          margin-bottom: 0; } }
+    main section .carousel {
+      box-shadow: 0 20px 20px 0 #201b1b;
+      filter: grayscale(5);
+      -webkit-filter: grayscale(5); }
+      main section .carousel:hover {
+        filter: none;
+        -webkit-filter: none; }
+      @media (max-width: 420px) {
+        main section .carousel {
+          margin-top: 0;
+          width: 90%;
+          margin: 0 15px; } }
+      @media (max-width: 768px) {
+        main section .carousel {
+          width: 90%;
+          margin-top: 20px;
+          margin: 0 10px; } }
+    main section .section_intro {
+      font-size: 1.3rem;
+      line-height: 1.5;
+      color: #000000;
+      font-family: "Charm-Regular";
+      text-align: center; }
+      @media (max-width: 420px) {
+        main section .section_intro {
+          padding: 15px;
+          margin-bottom: 0; } }
+      @media (max-width: 768px) {
+        main section .section_intro {
+          padding: 10px;
+          margin-top: 15px;
+          margin-bottom: 0; } }
+  main aside {
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main aside .aside__titulo {
+      font-family: "Charm-Regular";
+      margin-top: 2rem;
+      font-weight: bold;
+      color: #711161; }
+    main aside .social {
+      font-size: 3.5rem;
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      margin-bottom: 30px; }
+      @media (max-width: 420px) {
+        main aside .social {
+          justify-content: space-around; } }
+      @media (max-width: 768px) {
+        main aside .social {
+          justify-content: space-around; } }
+      main aside .social #facebook {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #facebook:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: #daa520; }
+      main aside .social #twitter {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #twitter:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: #daa520; }
+      main aside .social #instagram {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #instagram:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: #daa520; }
+      main aside .social #youtube {
+        color: #711161;
+        margin: 0 auto; }
+        main aside .social #youtube:hover {
+          transform: scale(1.5);
+          -webkit-transform: scale(1.5);
+          -moz-transform: scale(1.5);
+          -ms-transform: scale(1.5);
+          -o-transform: scale(1.5);
+          color: #daa520; }
+
+footer {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  font-family: "Charm-Regular";
+  box-shadow: 0 0 20px 0 #201b1b; }
+  footer p {
+    color: #daa520; }
+    footer p a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #711161; }
+      footer p a:hover {
+        color: #e48cce; }
+
+main h1 {
+  color: #711161;
+  font-family: "DancingScript";
+  padding: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  text-align: center; }
+
+main .container__disc {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+  main .container__disc .carousel {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    box-shadow: 0 0 30px 0 #000000;
+    margin-bottom: 20px; }
+    @media (max-width: 420px) {
+      main .container__disc .carousel {
+        width: 330px;
+        height: 330px; } }
+    @media (max-width: 768px) {
+      main .container__disc .carousel {
+        width: 450px;
+        height: 450px; } }
+    main .container__disc .carousel .carousel-caption {
+      color: #711161;
+      font-family: "Charm-Regular"; }
+      main .container__disc .carousel .carousel-caption a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.5rem;
+        font-weight: bold; }
+        main .container__disc .carousel .carousel-caption a:hover {
+          color: #daa520; }
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px; }
+  section .accordion {
+    width: 90%; }
+    @media (max-width: 768px) {
+      section .accordion {
+        width: 85%; } }
+    section .accordion .accordion-item {
+      color: #000000;
+      font-size: 1.2rem;
+      line-height: 2;
+      border: 1px solid #000000;
+      box-shadow: 0 0 30px 0 #000000;
+      background: linear-gradient(45deg, #711161, #e48cce); }
+      section .accordion .accordion-item button {
+        font-weight: bold;
+        font-family: "DancingScript";
+        color: #daa520;
+        font-size: 1.5rem;
+        background-color: #201b1b;
+        border: #711161; }
+    section .accordion .accordion-collapse {
+      justify-content: center; }
+      section .accordion .accordion-collapse p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        color: #000000;
+        font-family: "Charm-Regular";
+        text-align: center; }
+      section .accordion .accordion-collapse iframe {
+        margin: 0 320px;
+        justify-content: center;
+        width: 50%;
+        height: 300px; }
+        @media (max-width: 768px) {
+          section .accordion .accordion-collapse iframe {
+            width: 70%;
+            margin: 0 60px; } }
+        @media (max-width: 420px) {
+          section .accordion .accordion-collapse iframe {
+            width: 90%;
+            height: 200px;
+            margin: 0 15px; } }
+
+.main_gallery {
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px; }
+  .main_gallery h1 {
+    color: #711161;
+    font-family: "DancingScript";
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center; }
+  .main_gallery h3 {
+    font-family: "Charm-Regular";
+    font-size: 1.5rem; }
+  .main_gallery .galería {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px; }
+  .main_gallery img {
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    border: 5px double #daa520;
+    padding: 5px;
+    filter: grayscale(5);
+    -webkit-filter: grayscale(5); }
+    @media (max-width: 768px) {
+      .main_gallery img {
+        width: 300px;
+        height: 450px;
+        margin: 15px; } }
+    @media (max-width: 420px) {
+      .main_gallery img {
+        width: auto;
+        height: 450px; } }
+    .main_gallery img:hover {
+      filter: none;
+      -webkit-filter: none; }
+
+main {
+  margin-top: 20px; }
+  main .section__titulo h1 {
+    color: #711161;
+    font-family: "DancingScript";
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center; }
+  main .section__intro #flores {
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 20px 20px 0 #000000; }
+    @media (max-width: 768px) {
+      main .section__intro #flores {
+        width: 600px;
+        height: auto;
+        margin-bottom: 0; } }
+    @media (max-width: 420px) {
+      main .section__intro #flores {
+        width: 300px;
+        height: auto; } }
+  main .section__concierto p {
+    text-align: justify;
+    font-family: "Charm-Regular";
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #000000;
+    line-height: 1.5;
+    padding: 20px;
+    margin-bottom: 0; }
+    @media (max-width: 768px) {
+      main .section__concierto p {
+        margin-top: 0; } }
+  main aside iframe {
+    margin-top: 0;
+    box-shadow: 0 40px 40px 0 #000000;
+    width: 560px;
+    height: 315px; }
+    @media (max-width: 420px) {
+      main aside iframe {
+        width: 350px;
+        height: auto; } }
+  main .section__festival p {
+    text-align: justify;
+    font-family: "Charm-Regular";
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #000000;
+    line-height: 1.5;
+    padding: 20px;
+    margin-bottom: 0; }
+
+section {
+  margin-top: 20px; }
+  section h1 {
+    color: #711161;
+    font-family: "DancingScript";
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center; }
+
+.section2 {
+  padding: 20px; }
+  .section2 #mail {
+    width: 30px;
+    height: 30px;
+    color: #711161;
+    border-bottom: 2px; }
+  .section2 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "DancingScript";
+    font-weight: bold;
+    color: #711161; }
+    .section2 a:hover {
+      color: #daa520;
+      font-size: 2rem;
+      font-weight: bold; }
+  .section2 h5 {
+    font-family: "Charm-Regular";
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: bold; }
+  .section2 p {
+    color: black;
+    font-family: "Charm-Regular";
+    font-size: 1rem; }
+  .section2 .map {
+    padding: 10px; }
+    .section2 .map #direccion {
+      width: 550px;
+      height: 450px; }
+      @media (max-width: 420px) {
+        .section2 .map #direccion {
+          width: 370px;
+          height: 300px; } }
+
+.forma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px; }
+  @media (max-width: 768px) {
+    .forma {
+      margin-top: 15px;
+      align-items: center; } }
+  @media (max-width: 420px) {
+    .forma {
+      align-items: center;
+      margin-top: 0; } }
+  .forma fieldset {
+    background: linear-gradient(90deg, #e48cce, #711161);
+    width: 80%;
+    place-items: center;
+    padding: 15px;
+    border: solid 5px #711161;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 0 30px 0 #000000; }
+    .forma fieldset h3 {
+      font-family: "Charm-Regular";
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: bold; }
+    .forma fieldset .mb-3 {
+      font-family: "Charm-Regular";
+      font-size: 1.2rem; }
+      .forma fieldset .mb-3 input {
+        background: linear-gradient(90deg, #711161, #e48cce);
+        border: solid 2px black; }
+      .forma fieldset .mb-3 textarea {
+        background: linear-gradient(90deg, #711161, #e48cce);
+        border: solid 2px black; }
+    .forma fieldset .btn {
+      background-color: black;
+      font-family: "DancingScript";
+      font-size: 2rem;
+      font-weight: bold;
+      width: 100%;
+      justify-content: center;
+      color: #daa520;
+      border: solid 2px #daa520; }
+      .forma fieldset .btn:hover {
+        color: #daa520;
+        background-color: #711161;
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3); }
